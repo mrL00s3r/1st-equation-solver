@@ -2,6 +2,7 @@
 # program to solve 1st eqations
 # Made by mr_L00s3r at: 10/03/2019
 #TODO: make a better code, do not use all of this 'IF's'
+__author__ = "Mr_L00s3r"
 
 import re
 
@@ -22,9 +23,9 @@ if str(operation) == '*':
     x = angularCoefficient * linearCoefficient
     print(x)
 if 'x' in str(variableValues[1]) and operation == '-':
-    x = -linearCoefficient/angularCoefficient
+    x = -linearCoefficient - angularCoefficient
     print(x)
-if 'x' in str(variableValues[0]) and operation == '-':
+if 'x' in str(variableValues[0]) and operation == '/':
     x = linearCoefficient/angularCoefficient
     print(x)
 interval = input('write the interval that you want (divided by comma): ')
